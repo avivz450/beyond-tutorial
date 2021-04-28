@@ -16,3 +16,7 @@ def board(request):
         'messages': messages,
         'form': form,
     })
+
+
+def post_list(request):   
+    return render(request, 'msgboard/post_list.html', {})
